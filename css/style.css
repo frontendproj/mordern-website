@@ -1,29 +1,203 @@
 *{margin:0px;padding:0px;box-sizing: border-box;
 }
-
-
-
 body{font-family: 'Goldman', cursive;}
-.mainheader{width: 100%; height: 100vh;background-image: linear-gradient(57deg,#00ffbf,#b3ffec);
-	   clip-path: ellipse(1230px 740px at 10% 20%);}
-nav{width:100%;height: 100px;
-	display: flex;color: white;}
+	
 
-.logo{ width: 50%;height: 100px;}
 
-.logo h1{line-height: 100px;padding-left: 50px; text-transform: capitalize;}
-.menu {width: 50%;height: 100px;}
-.menu ul{ width: 100%;height: 100px;display: flex;justify-content: space-around;
-	     align-items: center;text-transform: uppercase;font-size: 12px;font-weight: bold;}
- .menu ul li {list-style: none;}
- .menu ul li a {text-decoration: none; color: white;}
+nav
+{
+	position: relative;
+	width: 100%;
+	background: #00ffbf;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	top: 0;
+	left: 0;
+	
+}
+nav .logo
+{
+	color: #fff;
+	
+	margin: 0 0 0 30px;
+	letter-spacing: 1px;
 
-section{ display: flex; }
+	width: 100%;
 
-.leftside{width: 600px;height: 300px;}
-.rightside{width: 55%;height: 300px;color: white;text-align: center;margin-top: 80px;
-	    text-transform: uppercase;}
-.rightside p{font-size: 1.1rem;padding: 10px 0; }
+}
+nav .menu
+{
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items:center;
+	
+	width: 100%;
 
-.rightside button{font-size: 17px;font-weight: bold;color: white;text-transform: uppercase;background-image: linear-gradient(57deg,#00ffbf,#b3ffec);
-			      border-radius:4px;border-style: none;padding: 20px 35px;}
+}
+nav ul
+{
+	
+	
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 30px 0;
+}
+nav ul li
+{
+	list-style: none;
+}
+nav ul li a:hover{
+	color: red;
+}
+nav ul li a
+{
+	position: relative;
+	text-decoration: none;
+	text-transform: uppercase;
+	color:  #fff;
+	font-weight: 600;
+	font-size: 1em;
+	letter-spacing: 2px;
+}
+.banner
+{
+	width: 100%;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(57deg,#00ffbf,#b3ffec);
+	clip-path: ellipse(1230px 740px at 10% 20%);
+	
+}
+.banner banner_img
+{
+width: 100%;
+position: relative;
+border: 3px solid red;
+background-size: cover;
+object-fit: cover;
+overflow: hidden;
+background-position: center;
+
+
+
+
+}
+.banner section
+{
+width: 100%;
+position: relative;
+display: flex;
+justify-content:center;
+align-items: center;
+flex-direction: column;
+
+}
+section h1
+{
+	color: #000;
+	font-size: 24px;
+
+}
+.banner button
+{
+	background-image: linear-gradient(57deg,#00ffbf,#b3ffec);
+	border-radius:4px;
+	padding: 10px 30px;
+	color: #fff;
+	font-size: 1em;
+	letter-spacing: 1px;
+	font-weight: 600;
+	border: none;
+	margin-top: 5px;
+	cursor: pointer;
+}
+
+ /* .leftside
+}
+}
+{
+	position: absolute;
+	width: 50%;
+	display: grid;
+	justify-content: center;
+	border: 1px solid blue;
+	height: 100%;
+	top: 0;
+	left: 0;
+
+
+}
+ .rightside */
+
+/* {
+	position: absolute;
+	width: 50%;
+
+	height: 100%;
+    display: grid;
+	justify-content: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	border: 1px solid green;
+	top: 100%;
+	right: 0;
+	margin-top: -660px; 
+
+	
+} */
+
+/* .rightside h1{border: 1px solid red; position: absolute; margin: -250px 0 0 150px; }
+.rightside p{font-size: 1rem; border: 1px solid red; position: absolute;margin: -160px 0 0 200px; }
+.rightside button{font-size: 17px;font-weight: bold;color: white;
+text-transform: uppercase;background-image: linear-gradient(57deg,#00ffbf,#b3ffec);
+border-radius:4px;border:1px solid red; position: absolute; margin: -100px 0 0 300px;
+ 
+ } */
+
+
+@media(max-width: 991px){
+	nav{
+		flex-direction: column;
+
+	}
+	nav .menu{
+		justify-content: space-around;
+		
+		
+	}
+	nav .logo{
+		display: grid;
+		justify-content: center;
+		margin-left: 0;
+	}
+.banner
+{
+	flex-direction: column-reverse;
+
+}
+.banner section
+{
+	margin-top: 10px;
+}
+.banner .banner_img
+{
+	margin-top: -40px;
+}
+@media(max-width: 400px){
+	.banner .banner_img{
+		max-width: 100%;
+		overflow: hidden;
+		background-size: cover;
+		background-position: center;
+	}
+}
