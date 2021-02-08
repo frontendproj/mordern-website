@@ -120,50 +120,7 @@ section h1
 	cursor: pointer;
 }
 
- /* .leftside
-}
-}
-{
-	position: absolute;
-	width: 50%;
-	display: grid;
-	justify-content: center;
-	border: 1px solid blue;
-	height: 100%;
-	top: 0;
-	left: 0;
-
-
-}
- .rightside */
-
-/* {
-	position: absolute;
-	width: 50%;
-
-	height: 100%;
-    display: grid;
-	justify-content: center;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-
-	border: 1px solid green;
-	top: 100%;
-	right: 0;
-	margin-top: -660px; 
-
-	
-} */
-
-/* .rightside h1{border: 1px solid red; position: absolute; margin: -250px 0 0 150px; }
-.rightside p{font-size: 1rem; border: 1px solid red; position: absolute;margin: -160px 0 0 200px; }
-.rightside button{font-size: 17px;font-weight: bold;color: white;
-text-transform: uppercase;background-image: linear-gradient(57deg,#00ffbf,#b3ffec);
-border-radius:4px;border:1px solid red; position: absolute; margin: -100px 0 0 300px;
  
- } */
-
 
 @media(max-width: 991px){
 	nav{
